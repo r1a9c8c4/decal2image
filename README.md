@@ -3,7 +3,7 @@ A bite-sized module that converts decal IDs to image IDs. Unlike other implement
 ## Example usage
 ```lua
 -- Make sure that HttpService is enabled
-local d2i = require(7062490293) --returns id or false if it fails to retrieve the id
+local d2i = require(7062490293) -- Returns ID or false if it fails to retrieve the ID
 
 print(d2i(1522361034)) --> 1522361030
 ```
