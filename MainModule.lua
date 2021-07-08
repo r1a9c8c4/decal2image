@@ -12,7 +12,7 @@ return function(id)
 	local urlEnd = string.find(xml, "</url>")
 	-- Crop the string between the two url attributes
 	local url = string.sub(xml, urlStart + 5, urlEnd - 1)
-	-- Get the id by splitting the equal sign and getting the ladder half
+	-- Get the id by splitting the equal sign and getting the latter half
 	local result = string.split(url, "=")[2]
  
 	return result
