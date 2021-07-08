@@ -1,5 +1,5 @@
 # decal2image
-Returns a Roblox image ID from a decal ID
+A bite-sized module that converts decal IDs to image IDs. Unlike other implementations, this doesn't subtract and check but rather directly gets the image ID through the AssetDelivery API.
 ## Example usage
 ```lua
 -- Make sure that HttpService is enabled
