@@ -1,7 +1,9 @@
+--!strict
+
 local httpService = game:GetService("HttpService")
 
 -- Luau typing
-return function(id: number): (string, boolean)
+return function(id: number): (boolean | string?)
 	-- Get the xml
 	local success, xml = pcall(httpService.GetAsync, httpService, string.format("https://assetdelivery.rprxy.xyz/v1/asset?id=%i", id))
 
